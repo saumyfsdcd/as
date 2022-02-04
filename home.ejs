@@ -1,0 +1,18 @@
+
+<%-include('header.ejs')%>
+<div style="padding-left: 50px;">
+    <h1><%=h%></h1>
+    <p><%=p%></p>
+</div>
+
+<footer>    
+    <div style="padding-left: 50px;">
+        <%newi.forEach(function(post){%>
+        <h1><a style="text-decoration: none; color: black;" href='/posts/<%=post.title%>'><%=post.title%> </a></h1>
+        <p><%=post.description%></p>
+        <%})%>
+    </div>
+    
+        
+</footer>
+<%-include('footer.ejs')%>
